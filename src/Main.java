@@ -13,10 +13,13 @@ public class Main extends Application {
 	public void start(Stage stage) throws Exception {
 		StackPane stackPane = new StackPane();
 		Button button = new Button("Rozpocznij grê");
+		Button button2 = new Button("Zakoncz gre");
 		stackPane.getChildren().add(button);
+		stackPane.getChildren().add(button2);
 		Scene scene = new Scene(stackPane,400,600);
 		stage.setScene(scene);
 		stage.setTitle("Space Invaders");
 		stage.show();
+		
 	}
 }
